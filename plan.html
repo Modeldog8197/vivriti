@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Player Aptitude Check</title>
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Basketball Player Aptitude Check</h2>
+        <form id="playerForm" onsubmit="submitForm(event)">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <label for="bmi">BMI:</label>
+                <input type="text" id="bmi" name="bmi" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Athletic Abilities</legend>
+                <label for="verticalJump">Vertical Jump (cm):</label>
+                <input type="number" id="verticalJump" name="verticalJump" required>
+
+                <label for="reach">Reach (cm):</label>
+                <input type="number" id="reach" name="reach" required>
+
+                <label for="sprintTime">Time taken to sprint 100m (optional):</label>
+                <input type="text" id="sprintTime" name="sprintTime">
+
+                <label for="basketballKnowledge">One word answer to 3 basketball knowledge questions:</label>
+                <textarea id="basketballKnowledge" name="basketballKnowledge" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Location</legend>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="confirmation" class="hidden">
+            <h3>Thank you for submitting!</h3>
+            <p>Your information has been recorded.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

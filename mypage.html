@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mypage.css">
+<script src="mypage.js"></script>
+<title>Nutritional Requirements</title>
+<div class="menu-btn" id="menu-btn">
+    <button class="hhh" id="menu-btn" onclick="menu()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/></button>
+  </div>
+<header>
+
+    <h1 id="dog">Health Profile and Personalized Meal Plan</h1>
+
+</header>
+<div class="side-bar" id="side-bar">
+      
+    <header>
+      <div class="close-btn">
+        <button class="fff" id="close-btn" onclick="clsemenu()">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgBJREFUSEu11UuojlEUBuDnjFASUZJyG7hEKEPXiXIZYaCkDChGUsrINWODkyKGZGIgA6WUXDOSZCAkl6IkRSly963af/a/7e//zzl11uzb31rrXet91157wCjbwCjn1w9gDLZgHZZgFv7gFR7iKi7hR1uhvQDW41RK2qvR59iD6zWnNoCjTaVHhkHfbxzAiTKmBnAMh4eRPHfdh8H8oATYiCsjTB5h0clK3OvkyAHG4xmmVQA+NpVNKs5rZ+HytBF+Mb7HRw4QQp2uJA+6LuA2pqf/b7EKO1ro3ITLJUBQExTl9rVxXJo6m4Nb6Wckf4m5eIQY59zOYncJ8CarMHd+hzWp9dmJ59dYgBtN11MrXT/AshLgC8a1CPwBKxJIuCxsQG9iSov/p45muQafEULXrASYh7s9ACLXhLKDJ4jA0t43VKxG/I9VERarIii6g8mVmMepy64piknZVjh/wyLEOojkkTAs6Aod5qedVIp8Lk1YF8B2nK9U0zamy7EThyoxW3GxpCgEDhpmVAJqlyqEnFjxjcsaFy26/29dr8W1FqGHchyrIka6Q2X1PTiI40PJVvHZ24h+Mj9vW9fBa2zVfg9SJ9cv7C83aY2iHDzWxpmW2537xYTtytZIV2P9Khzb7JrN2JCEm5mezBe4n/SKpfazjdJ+ACOU4l/YqAP8BfGTXRkJ43i2AAAAAElFTkSuQmCC"/>
+        </button>
+      </div>
+      <div class="logo">
+        <h1>AI Sports</h1>
+      </div>
+      <div class="menu">
+        <div class="menu-home"><a href="index.html"><img src="https://img.icons8.com/?size=100&id=2797&format=png&color=FFFFFF" width="30px" height="30px"/>  Home</a></div>
+        <div class="menu-basketball"><a href="bb.html"><img src="https://img.icons8.com/?size=100&id=9817&format=png&color=FFFFFF" width="30px" height="30px"/> Basketball</a></div>
+        <div class="menu-basketball"><a href="fb.html"><img src="https://img.icons8.com/?size=100&id=LDze7ETPiEDu&format=png&color=FFFFFF" width="30px" height="30px"/> Football</a></div>
+        <div class="menu-cricket"><a href="cricket.html"><img src="https://img.icons8.com/?size=100&id=9836&format=png&color=FFFFFF" width="30px" height="30px"/>  Cricket
+          <img src="" /></a></div>
+      <div class="menu-news"><a href="index.html#news">
+          <img src="https://img.icons8.com/?size=100&id=VzgzXxIQUeYS&format=png&color=FFFFFF" width="30px" height="30px" />
+              Sports News
+              </a>
+      </div>
+        <div class="about-us"><a href="index (3).html#about-us"><img src="https://img.icons8.com/?size=100&id=2800&format=png&color=FFFFFF" width="30px" height="30px"/>  About Us</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+<body>
+    <div class="container">
+        
+        <div class="input-group">
+            <label for="weight" class="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+        </div>
+        <div class="input-group">
+            <label for="height" class="he">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" { border: 5px solid #ccc; padding: 10px; border-radius: 5px; }>
+        </div>
+        <button class="btn" onclick="calculateBMIAndSuggestMeal()">Calculate BMI and Suggest Meal</button>
+       
+        <div id="bmiResult"></div>
+        <div class="meal-suggestion" id="mealSuggestion"></div>
+        <table class="diet-table" id="dietTable">
+            
+            <thead>
+                <tr>
+                  
+                        <th class="meal">Meal</th>  
+                        <th class="food">Food</th>
+                        <th class="calories">Calories</th>
+                        
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Diet chart rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="recipes">
+        <h1 class="doc"> Here are a few recipes you could try </h1>
+        <a href=" https://thenaturalnurturer.com/15-fruit-and-veggie-smoothies/"> Smoothies</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href=" https://www.foodnetwork.com/recipes/photos/5-chicken-breast-recipes-for-dinner-tonight">Chicken Breast </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href=" https://www.indiatimes.com/culture/food/11-healthy-and-delicious-paneer-recipes-you-have-to-try-at-least-once-234945.html">Paneer </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href=" https://cookieandkate.com/avocado-toast-recipe/">Avocado Toast </a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="https://tasty.co/article/lavanyanarayanan/buddha-bowl-recipes">Buddha Bowl </a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href=" https://www.bbcgoodfood.com/recipes/collection/healthy-egg-recipes">Innovative Egg Recipes</a>
+
+        <br>
+    </div>    
+
+
+
+
+
+

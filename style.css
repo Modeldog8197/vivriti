@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.heading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-display: inherit;
+}
+
+.navbar {
+    background-color: transparent;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: sticky; top: 0px;
+    background-filter: blur(10px);
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-left: 200px;
+    transition: .3s;
+    justify-content: center;
+    align-items: center;
+    animation: none 2s steps(40, end) 1;
+    position: sticky; top: 10px;
+    background-filter: blur(50px);
+    border: #04080d solid 5px;
+    border-radius: 10%;
+    padding: 0px 30px 0px 30px;
+    
+
+
+
+
+
+
+
+}
+.leJump span { animation-name: leJump; animation-iteration-count: infinite }
+@keyframes leJump {
+    to { transform: translateY(-20px) }
+}
+
+
+.active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #08ccda;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all .5s ease;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+    z-index: -1;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: rgb(32, 8, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.effect3d { animation-name: effect3d }
+@keyframes effect3d {
+    to {
+        text-shadow: 0 1px 0 #20ffec, 0 2px 0 #1ccfc66c, 0 3px 0 #0e1acc, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    }
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: azure;
+    font-weight: 600;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10 rem 9% 2rem;
+    align-items: center;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9;
+    background: url('A_black_image.jpg.webp');
+
+
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    size: cover;
+}
+
+
+.heading h6 {
+    font-size: 5.0rem;
+    margin-top: 350px;
+    color: aliceblue;
+}
+
+.heading .text-animate h6 {
+    font-size: 8.0rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px rgb(52, 152, 170);
+    margin-left: 150px;
+}
+
+.heading .text-animate h6:hover {
+    animation: danceMiddle 2s steps(40, end) 1;
+    animation: effect3d 3s steps(40, end) infinite;
+}
+
+.text-animate {
+    position: relative;
+    width: 32;
+    display: inline-block;
+    margin-bottom: 5%;
+    animation: effect3d 3s steps(40, end) 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: danceMiddle 2s steps(0, end) 1;
+    align-items: center;
+    padding-left: 650px;
+
+}
+.text-animate h6{
+    
+}
+
+.animate-text {
+    overflow: hidden;
+    border-right: 0.1 rem solid rgb(233, 18, 18);
+    animation: danceMiddle 2s steps(80, end) 1;
+    white-space: nowrap;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYoaa934zhgNFUopoJwz65UhEE9YzBsdMQAW5u6fuej-Ak9AQUgSqtWBdtJ4_LGMV58Vw&usqp=CAU");
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.spsp{
+    margin-top: 100px;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes breaking {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+.bb-image video{
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+
+
+
+    
+}
+.triangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-image {
+    margin-bottom: 20px;
+}
+
+.bottom-images {
+    display: flex;
+    justify-content: space-around;
+
+}
+.bottom-images video{
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+}
+.triangle-container video:hover{
+    border: #d6e9c6 3px solid;
+    opacity: 70%;
+}
+.image-container {
+    text-align: center;
+}
+
+img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 2.0rem;
+    color: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #04080d;
+}
+
+.sports-heading {
+    align-items: center;
+    text-align: center;
+    font-size: 5.0rem;
+    font-weight: bold;
+    font-display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.spsp {
+    font-family: 'Dancing Script';
+}
+
+.fb-image video{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 200px;
+
+
+
+}
+#fb video{
+    width: 500px;
+    height: 300px;
+}
+
+.sports-images {
+    animation: fading 3s steps(40, end) 1;
+}
+#cric video{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.cricket-image video{
+
+    border-radius: 50%;
+    width: 500px;
+    height: 300px;
+    align-self: center;
+    justify-content: center;
+
+
+    
+  
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 0px;
+    margin-left: 1200px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-text {
+    margin-top: 10px;
+}
+#fb{
+    border-radius: 50%;
+}
+
+#sports {
+    background-image: url('A_black_image.jpg.webp');
+    background-size: cover;
+
+}
+
+.about-us-heading {
+    text-align: center;
+    margin-top: 0%;
+    justify-content: center;
+    font-size: 7.0rem;
+    display: flex;
+    color: #ffffff;
+    font-family: Dancing Script;
+}
+
+.about-us-images {
+    justify-content: right;
+    border-radius: 0%;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: right;
+
+}
+.about-us-images img{
+    border-radius: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avdhoot-aayush {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+.aayusshmaan-arnav {
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: space-between;
+}
+.avdhoot{
+    padding-right: 90px;
+}
+.aayusshmaan{
+    padding-right: 90px;
+}
+#myVideo1 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+
+}
+.footer-container{
+    font-size: 3.0rem;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    background-color: rgb(7, 7, 7);
+    height: 200px;
+    width: ;
+}
+
+#myVideo1:hover {
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+}
+
+#myVideo2 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+
+}
+
+#myVideo2:hover {
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+}
+
+#myVideo2:hover {
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+}
+
+#myVideo3 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+
+}
+
+#myVideo3:hover {
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    transition: 1s;
+    box-shadow: #04080d 5px;
+}
+
+.spspsp {
+    color: white;
+    font-family: Arsenal SC;
+}
+.leWaterWave span { animation: leWaterWave .2s linear infinite }
+@keyframes leWaterWave {
+    50% { transform: skewY(1deg) skewX(-1deg) scale(1.06) }
+}
+.danceMiddle { animation-name: danceMiddle }
+@keyframes danceMiddle {
+    16% { transform: skew(-14deg) }
+    33% { transform: skew(12deg) }
+    49% { transform: skew(-8deg) }
+    66% { transform: skew(6deg) }
+    83% { transform: skew(-4deg) }
+}
+.ara{
+    color: #ffffff;
+    font-size: 2.0rem;
+    z-index: -1;
+    opacity: 10%;
+
+}
+.ava{
+    color: #ffffff;
+    font-size: 2.0rem;
+    z-index: -1;
+}
+.aya {
+    color: #ffffff;
+    font-size: 2.0rem;
+    z-index: -1;
+
+}
+
+.asa {
+    color: #ffffff;
+    font-size: 2.0rem;
+    z-index: -1;
+
+}
