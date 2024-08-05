@@ -27,6 +27,20 @@ body {
     width: 115px;
     
 }
+.logo{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 13px;
+    letter-spacing: 0.5px;
+    color: aliceblue;
+    
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+}
 .buttons{
     text-align: center;
     font-size:15px;
