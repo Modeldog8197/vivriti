@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+<div class="menu-btn" id="menu-btn">
+    <button class="hhh" id="menu-btn" onclick="menu()"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=" /></button>
+</div>
+<div class="header">
+    <h1>STORE</h1>
+</div>
+    
+
+<div class="side-bar" id="side-bar">
+
+    <header>
+        <div class="close-btn">
+            <button class="fff" id="close-btn" onclick="clsemenu()">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgBJREFUSEu11UuojlEUBuDnjFASUZJyG7hEKEPXiXIZYaCkDChGUsrINWODkyKGZGIgA6WUXDOSZCAkl6IkRSly963af/a/7e//zzl11uzb31rrXet91157wCjbwCjn1w9gDLZgHZZgFv7gFR7iKi7hR1uhvQDW41RK2qvR59iD6zWnNoCjTaVHhkHfbxzAiTKmBnAMh4eRPHfdh8H8oATYiCsjTB5h0clK3OvkyAHG4xmmVQA+NpVNKs5rZ+HytBF+Mb7HRw4QQp2uJA+6LuA2pqf/b7EKO1ro3ITLJUBQExTl9rVxXJo6m4Nb6Wckf4m5eIQY59zOYncJ8CarMHd+hzWp9dmJ59dYgBtN11MrXT/AshLgC8a1CPwBKxJIuCxsQG9iSov/p45muQafEULXrASYh7s9ACLXhLKDJ4jA0t43VKxG/I9VERarIii6g8mVmMepy64piknZVjh/wyLEOojkkTAs6Aod5qedVIp8Lk1YF8B2nK9U0zamy7EThyoxW3GxpCgEDhpmVAJqlyqEnFjxjcsaFy26/29dr8W1FqGHchyrIka6Q2X1PTiI40PJVvHZ24h+Mj9vW9fBa2zVfg9SJ9cv7C83aY2iHDzWxpmW2537xYTtytZIV2P9Khzb7JrN2JCEm5mezBe4n/SKpfazjdJ+ACOU4l/YqAP8BfGTXRkJ43i2AAAAAElFTkSuQmCC" />
+            </button>
+        </div>
+        <div class="logo">
+            <h1>AI Sports</h1>
+        </div>
+        <div class="menu">
+            <div class="menu-home"><a href="index.html"><img
+                        src="https://img.icons8.com/?size=100&id=2797&format=png&color=FFFFFF" width="30px"
+                        height="30px" /> Home</a></div>
+            <div class="menu-basketball"><a href="bb.html"><img
+                        src="https://img.icons8.com/?size=100&id=9817&format=png&color=FFFFFF" width="30px"
+                        height="30px" /> Basketball</a></div>
+            <div class="menu-basketball"><a href="fb.html"><img
+                        src="https://img.icons8.com/?size=100&id=LDze7ETPiEDu&format=png&color=FFFFFF" width="30px"
+                        height="30px" /> Football</a></div>
+            <div class="menu-news"><a href="index.html#news">
+                    <img src="https://img.icons8.com/?size=100&id=VzgzXxIQUeYS&format=png&color=FFFFFF" width="30px"
+                        height="30px" />
+                    Sports News
+                </a>
+            </div>
+            <div class="about-us"><a href="index (3).html#about-us"><img
+                        src="https://img.icons8.com/?size=100&id=2800&format=png&color=FFFFFF" width="30px"
+                        height="30px" /> About Us</a>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="buttons">
+    <div class="dropdown" onclick="showDropdown('jerseys')">
+        <button class="dropbtn">Jerseys</button>
+        <div class="dropdown-content" id="jerseys">
+            <a href="#indianFootball">Football</a>
+            <a href="#indianCricket">Cricket</a>
+        </div>
+    </div>
+    <div class="dropdown" onclick="showDropdown('footwear')">
+        <button class="dropbtn">Footwear</button>
+        <div class="dropdown-content" id="footwear">
+            <a href="#footballShoes">Football</a>
+            <a href="#cricketShoes">Cricket</a>
+            <a href="#basketballShoes">Basketball</a>
+        </div>
+    </div>
+    <div class="dropdown" onclick="showDropdown('accessories')">
+        <button class="dropbtn">Accessories</button>
+        <div class="dropdown-content" id="accessories">
+            <a href="#caps">Caps</a>
+            <a href="#balls">Balls</a>
+            <a href="#handStraps">Arm Strap</a>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="jerseysSection">
+    <h2>Basketball Jerseys</h2>
+    <a href="https://shopthearena.com/collections/nba/products/los-angeles-lakers-city-t-shirt-n121mt024" target="
+        _blank">
+        <img src="https://shopthearena.com/cdn/shop/products/N121MT024-Front_d558803c-0b90-4274-aa91-fb30aff50732_400x.jpg?v=1653290419" alt="">
+        <a href="https://shopthearena.com/collections/mens-t-shirts/products/nba-lebron-james-classic-t-shirt-nbpataw001" target="
+        _blank">
+            <img src="https://shopthearena.com/cdn/shop/products/NBPATAW001-Front01_400x.jpg?v=1634735940" alt="">
+            <a href="https://shopthearena.com/collections/womens-unisex-t-shirts/products/los-angeles-lakers-classic-crest-t-shirt-n121mt022b"target="
+            _blank">
+                <img src="https://shopthearena.com/cdn/shop/products/N121MT022B-Front_52a7a052-e888-4e52-9b3c-9fd5d51e109b_400x.jpg?v=1653290360" alt="">
+        </a>
+</div>
+
+
+
+<div class="footballsection" id="indianFootball">
+    <h2>Indian Football Jerseys </h2>
+    <a href="https://www.amazon.in/woopme%C2%AE-Bangalore-Football-HomeT-Shirt-Multicolour/dp/B0CNCRVFB4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.O4ka4bTaWVpld_gNHWeCFBW8I8UtcFgvwl8OUCKE9COdIRLeQWoULYsjTLxypYIj2oXIBpLeyS0hSncRxBqzdUxMnEkwCZRdemIOimvD1asqA1JEcsT1T3cvG6qkcyWnBXfxpTWRs5z8MrtclQYa04HLWj-iPihY2ReZa3wRDzfconxtDympQ8TANK7vuPQeBQOEdC1MK_ZMjRzwRSdDy_t7phX2odgUYhpfu2t8W1uOckDeYrElbbnY7Dg4RSeozSOgVl4cshEhrMUVka8eYmQwfQhWZ8Uu5F6Lqc8s7IM.orPWeV8uvAl5KXQzOSLtlaGfmxjObF2xHjfWyGYza6Y&dib_tag=se&keywords=indian+football+jersey&qid=1722587178&rnid=3576079031&s=apparel&sr=1-4" target="
+    _blank">
+    
+    <img src="https://m.media-amazon.com/images/I/41CDcCLLkBL._SX679_.jpg" alt="">
+    <a href="https://six5six.in/products/kerala-blasters-away-jersey-youth-fan-edition-2023-24" target="_blank">
+    <img src="https://six5six.in/cdn/shop/files/656-KBFC-AWAY-FRONT-ALLSPONSORS_1024x1024.jpg?v=1697003234" alt="">
+         <a href="https://six5six.in/products/kerala-blasters-training-jersey-2023-24-blue-red" target="
+         _blank">
+         <img src="https://six5six.in/cdn/shop/files/656-KBFC-TRAINING-BLUE-FRONTLarge_1024x1024.jpg?v=1703051403" alt="">
+        </a>
+        </div>
+
+
+
+
+<div class="cricketsection" id="indianCricket">
+   <h2>Indian Cricket Jerseys<h2>
+    <a href="https://fanaacs.com/products/india-t-20-cricket-world-cup-2023-jersey-player-version?_pos=4&_sid=37ff7d002&_ss=r" target="
+    _blank">
+    <img src="https://fanaacs.com/cdn/shop/files/T-20PlayerJersey.jpg?v=1718784507" alt="">
+    <a href="https://fanaacs.com/products/india-t-20-cricket-world-cup-2024-jersey-player-version?_pos=5&_sid=37ff7d002&_ss=r" target="
+    _blank">
+    <img src="https://fanaacs.com/cdn/shop/files/IndiaT20Homekit1.jpg?v=1718445373" alt="">
+    <a href="https://bestcricketstore.com/product/india-official-mpl-fan-jersey/" target="
+    _blank">
+    <img src="https://cdn-ilbbnef.nitrocdn.com/OjFVETHYYORjKMqwGnbjNjwKADteabjZ/assets/images/optimized/rev-9c5a098/bestcricketstore.com/wp-content/uploads/2021/12/india1-1-1000x1063.jpg" alt="">
+         </a>
+</div>
+
+<div class="section" id="footballShoes">
+    <h2>Football Shoes</h2>
+    <a href="https://www.niviasports.com/products/shastra-5935" target="
+    _blank">
+        <img src="https://www.niviasports.com/cdn/shop/files/FB-5935GBShastra2.jpg?v=1719385436&width=400" alt="">
+        <a href="https://www.niviasports.com/products/carbonite-6-0-football-stud-1647-1" target="
+        _blank">
+        <img src="https://www.niviasports.com/cdn/shop/files/FB-1647SB_Carbonite_6.0_1_50b88ae5-916f-448d-a2bd-1964123e9c24.jpg?v=1719385250&width=400" alt="">
+        <a href="https://www.niviasports.com/products/spear-football-stud-spear" target="
+        _blank">
+        <img src="https://www.niviasports.com/cdn/shop/files/FB-5940WY_Spear_1.jpg?v=1719317550&width=400" alt="">
+             </a>
+    </div>
+
+<div class="cricketShoes" id="cricketShoes">
+    <h2>Cricket Shoes</h2>
+    <a href="https://www.sstoncricket.com/ss-josh-shoes-for-men-s-and-boy-s.html" target="
+    _blank">
+    <img src="https://www.sstoncricket.com/wp-content/uploads/2023/05/2R9A9703-scaled.jpg" alt="">
+    <a href="https://www.sstoncricket.com/ss-gutsy-shoes-for-men-s-and-boy-s.html" target="
+    _blank">
+    <img src="https://www.sstoncricket.com/wp-content/uploads/2023/05/R9A8394-scaled.jpg" alt="">
+    <a href="https://www.sstoncricket.com/ss-ultimate-cricket-shoes-for-men-s-and-boy-s.html" target="
+    _blank">
+    <img src="https://www.sstoncricket.com/wp-content/uploads/2023/05/ultimate_black__4_1.jpg" alt="">
+         </a>
+</div>
+
+<div class="basketballShoes" id="basketballShoes">
+    <h2>Basketball Shoes</h2>
+    <a href="https://www.superkicks.in/products/elevate-3-white-black-pure-platinum" target="
+    _blank">
+    <img src="https://www.superkicks.in/cdn/shop/files/2_fbc07c99-0753-4f89-bb58-36417f0f7a38.jpg?v=1711976136&width=1946" alt="">
+    <a href="https://www.superkicks.in/products/impact-4-ashen-slate-barely-volt-thunder-blue" target="
+    _blank">
+    <img src="https://www.superkicks.in/cdn/shop/files/5_0f4588ac-f8e3-40f0-99d4-b9d473d5782d.jpg?v=1711115073&width=1946" alt="">
+    <a href="https://www.superkicks.in/products/impact-4-white-black-pure-platinum" target="
+    _blank">
+    <img src="https://www.superkicks.in/cdn/shop/files/2_c51b693f-1dd0-4690-b1a4-898ec0a57788.jpg?v=1712571208&width=1946" alt="">
+         </a>
+</div>
+
+<div class="capssection" id="caps">
+    <h2>Caps</h2>
+    <a href="https://www.ralphlauren.global/in/en/cotton-chino-ball-cap-643781.html#utm_subchannel=genericsearch&utm_source=google&utm_medium=paidsearch&utm_campaign=generic&utm_term=generic&utm_content=cid20808332152_crid706896545906_kwcaps_tidkwd-10456971_pid%7Bproductid%7D&s_kwcid=AL!6316!3!706896545906!b!!g!!caps&label=Summer-2024&gad_source=1&gclid=CjwKCAjw5Ky1BhAgEiwA5jGujm23xtKk9pYTKEHvouYAc7O5Ov5hyFjdvU2o3yDQwrHLfG5Iyq8-rRoChfYQAvD_BwE&start=1&cgid=men-caps-hats-scarves-gloves" target="
+    _blank">
+    <img src="https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1430330_lifestyle?$rl_1x1_pdp$" alt="">
+    <a href="https://www.ralphlauren.global/in/en/stretch-cotton-twill-ball-cap-100029448.html#utm_subchannel=genericsearch&utm_source=google&utm_medium=paidsearch&utm_campaign=generic&utm_term=generic&utm_content=cid20808332152_crid706896545906_kwcaps_tidkwd-10456971_pid%7Bproductid%7D&s_kwcid=AL!6316!3!706896545906!b!!g!!caps&label=Summer-2024&gad_source=1&gclid=CjwKCAjw5Ky1BhAgEiwA5jGujm23xtKk9pYTKEHvouYAc7O5Ov5hyFjdvU2o3yDQwrHLfG5Iyq8-rRoChfYQAvD_BwE&start=1&cgid=men-caps-hats-scarves-gloves" target="
+    _blank">
+    <img src="https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1478094_lifestyle?$rl_1x1_pdp$" alt="">
+    <a href="https://www.ralphlauren.global/in/en/wimbledon-ballperson-cap-614161.html#utm_subchannel=genericsearch&utm_source=google&utm_medium=paidsearch&utm_campaign=generic&utm_term=generic&utm_content=cid20808332152_crid706896545906_kwcaps_tidkwd-10456971_pid%7Bproductid%7D&s_kwcid=AL!6316!3!706896545906!b!!g!!caps&label=Summer-2024&gad_source=1&gclid=CjwKCAjw5Ky1BhAgEiwA5jGujm23xtKk9pYTKEHvouYAc7O5Ov5hyFjdvU2o3yDQwrHLfG5Iyq8-rRoChfYQAvD_BwE&start=1&cgid=men-caps-hats-scarves-gloves" target="
+    _blank">
+    <img src="https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1436489_lifestyle?$rl_1x1_pdp$" alt="">
+         </a>
+</div>
+
+<div class="section" id="balls">
+    <h2>Equipment</h2>
+    <a href="https://www.niviasports.com/products/storm" target="
+    _blank">
+    <img src="https://www.niviasports.com/cdn/shop/files/2B0A2750-1.jpg?v=1720252198&width=400" alt="">
+    <a href="https://www.niviasports.com/products/pro-touch-pro-touch-basketball-balls" target="
+    _blank">
+    <img src="https://www.niviasports.com/cdn/shop/files/077A1751.jpg?v=1721816232&width=400" alt="">
+    <a href="https://www.niviasports.com/products/nivia-cricket-tennis-ball-heavy-pack-of-12" target="
+    _blank">
+    <img src="https://www.niviasports.com/cdn/shop/files/CT-383CRICKETTENNISBALL_1.jpg?v=1716459956&width=400" alt="">
+         </a>
+</div>
+
+<script src="shop.js"></script>
+
+</body>
+</html>

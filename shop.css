@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(131, 124, 124);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align:center
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.buttons button{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: rgb(101, 100, 114);
+    border-radius: 25%;
+    height: 70px;
+    width: 115px;
+    
+}
+.buttons{
+    text-align: center;
+    font-size:15px;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+
+    display: block;
+    text-decoration: underline;
+}
+
+.dropdown:focus-within .dropdown-content,
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section h2 {
+    color: white;
+    margin: 0;
+}
+.footballsection img{
+    width:410px;
+    height: 480px;
+    text-align:center
+}
+.cricketsection img{
+    width:410px;
+    height: 480px;
+    text-align:center
+
+}
+.cricketShoes img{
+    width:410px;
+    height: 480px;
+    text-align:center
+}
+.basketballShoes img {
+    width:410px;
+    height: 480px;
+    text-align:center
+
+}
+.capssection img {
+    width:410px;
+    height: 480px;
+    text-align:center
+}
+.close-btn button {
+    border-radius: 0%;
+    background-color: rgba(8, 184, 207, 0.349);
+    shape-margin: 50%;
+    border: #2574c2;
+    margin-left: 0px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.logo {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    letter-spacing: 0.5px;
+    color: aliceblue;
+
+}
+
+.menu {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 2.0rem;
+    margin-left: 6px;
+    padding: 10px;
+    font-style: bold;
+    color: rgb(1, 125, 233);
+    z-index: 10;
+
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: solid;
+    line-height: 70px;
+    cursor: pointer;
+    filter: none;
+    z-index: 100;
+
+}
+
+.menu-btn {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    color: rgb(0, 0, 0);
+    z-index: 100;
+    visibility: visible;
+}
+#closebutton {
+    visibility: visible;
+    margin-right: 10%;
+    margin-left: 1400px;
+    visibility: hidden;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+
+}
+.side-bar {
+    position: fixed;
+    /* Keep the sidebar in place */
+    top: 0;
+    left: -3000px;
+    width: 290px;
+    /* Set the sidebar width */
+    height: 100%;
+    background-color: #000000;
+    /* Or your desired color */
+    transition: left 0.3s ease-in-out;
+    /* Smooth transition */
+    z-index: 100;
+    /* Ensure it's on top */
+}
+
+.side-bar.active {
+    left: 0;
+    /* Slide in when active */
+}
+.close-btn {
+    border-radius: 0%;
+    background-color: rgba(8, 184, 207, 0.349);
+    border: #2574c2;
+    margin-left: 0px;
+    cursor: pointer;
+    visibility: hidden;
+}
